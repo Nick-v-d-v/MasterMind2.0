@@ -1,4 +1,4 @@
-package mastermind;
+package masterMind2_0;
 
 import java.util.*;
 
