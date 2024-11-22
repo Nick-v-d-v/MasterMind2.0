@@ -19,27 +19,27 @@ public class Mastermind {
         List<String> colorList = Arrays.asList(c);
         Collections.shuffle(colorList); 
 
-     
+        List<String> computerColor = Arrays.asList();
         String computerColor1 = colorList.get(0);
         String computerColor2 = colorList.get(1);
         String computerColor3 = colorList.get(2);
         String computerColor4 = colorList.get(3);
 
         int colorsright = 0;
-        System.out.println("Guess the code using the following colors: Blue, Green, Yellow, Purple, Orange, and Red. You get 10 attempts before you lose. Black = Good   White = Good but at the wrong place");
+        System.out.println("Guess the code using the following colors: Blue, Green, Yellow, Purple, Orange, and Red (Use capital letters. You get 10 attempts before you lose. Black = Good   White = Good but at the wrong place");
 
         for (int rowloop = 1; rowloop <= 10; rowloop++) {
             System.out.println("Color one:");
-            String userColor1 = capitalize(input.nextLine());
+            String userColor1 = (input.nextLine());
 
             System.out.println("Color two:");
-            String userColor2 = capitalize(input.nextLine());
+            String userColor2 = (input.nextLine());
 
             System.out.println("Color three:");
-            String userColor3 = capitalize(input.nextLine());
+            String userColor3 = (input.nextLine());
 
             System.out.println("Color four:");
-            String userColor4 = capitalize(input.nextLine());
+            String userColor4 = (input.nextLine());
 
             colorsright = 0; 
 
@@ -109,10 +109,9 @@ public class Mastermind {
     }
 
 
-    public static String capitalize(String str) {
-        if (str == null || str.isEmpty()) {
-            return str;
-        }
-        return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
-    }
-}
+	}
+
+
+	
+
+
